@@ -16,7 +16,10 @@
 \usepackage{amsmath}
 \usepackage{tikz}
 
-\newcommand\copyrightnotice{\vfill {\tiny \textcolor{gray}{Copyright 2015 Christopher L.~Phan. This work is licensed under a \href{http://creativecommons.org/licenses/by-sa/4.0/}{Creative Commons Attribution-ShareAlike 4.0 International License.}}}}
+\newcommand\copyrightnotice{\vfill {\tiny \textcolor{gray}{Copyright
+2015 Christopher L.~Phan. This work is licensed under a 
+\href{http://creativecommons.org/licenses/by-sa/4.0/}
+{Creative Commons Attribution-ShareAlike 4.0 International License.}}}}
 
 \begin{document}
 
@@ -52,13 +55,17 @@ save(plot(-cos(x), x, -2*pi, 2*pi, figsize=[3, 2]), "deriv_loop_-cos.pdf")
 \node[anchor=north] at (negcosinecurve.south) {$-\cos \theta$};
 
 
-\draw[->,thick, purple] (sinecurve.east) -- (cosinecurve.west) node[anchor=south, midway] {$\displaystyle \frac{d}{d\theta}$};
+\draw[->,thick, purple] (sinecurve.east) -- (cosinecurve.west) node[anchor=south, midway] 
+{$\displaystyle \frac{d}{d\theta}$};
 
-\draw[->,thick, purple] (cosinecurve.south) -- (negsinecurve.north) node[anchor=west, midway] {$\displaystyle \frac{d}{d\theta}$};
+\draw[->,thick, purple] (cosinecurve.south) -- (negsinecurve.north) node[anchor=west, midway] 
+{$\displaystyle \frac{d}{d\theta}$};
 
-\draw[->,thick, purple] (negsinecurve.west) -- (negcosinecurve.east) node[anchor=north, midway] {$\displaystyle \frac{d}{d\theta}$};
+\draw[->,thick, purple] (negsinecurve.west) -- (negcosinecurve.east) node[anchor=north, midway] 
+{$\displaystyle \frac{d}{d\theta}$};
 
-\draw[->,thick, purple] (negcosinecurve.north) -- (sinecurve.south) node[anchor=east, midway] {$\displaystyle \frac{d}{d\theta}$};
+\draw[->,thick, purple] (negcosinecurve.north) -- (sinecurve.south) node[anchor=east, midway] 
+{$\displaystyle \frac{d}{d\theta}$};
 
 \end{tikzpicture}
 \end{center}
